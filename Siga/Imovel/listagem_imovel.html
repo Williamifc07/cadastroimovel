@@ -1,0 +1,34 @@
+<!-- Filtro -->
+<form action="lista_imovel.php" method="GET">
+    <fieldset>
+      <legend>Busca de Imóveis</legend>
+      <label for="busca">Busca</label>
+      <input type="text" name="busca">
+      
+      <label for="tipo">Tipo de Filtro</label>
+      <select name="tipo">
+          <option value="0">Selecione</option>
+          <option value="1">ID</option>
+          <option value="2">Título</option>
+      </select>
+      
+      <button type="submit">Buscar</button>
+    </fieldset>
+  </form>
+  
+  <!-- Listagem -->
+  <h1>Listagem de Imóveis</h1>
+  <table border="1">
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Endereço</th>
+      <th>Preço</th>
+      <th>Tipo</th>
+      <th>Quartos</th>
+      <th>Banheiros</th>
+      <th>Anexo</th>
+    </tr>
+    {itens}
+  </table>
+  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Imóveis</title>
+</head>
+<body>
+    <center>
+    <h1>Manutenção de Imóveis</h1>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Formulário</legend>
+
+            <label for="id">ID:</label><br>
+            <input type="text" name="id" readonly value="{id}"><br>
+
+            <label for="titulo">Título:</label><br>
+            <input type="text" name="titulo" value="{titulo}"><br>
+
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" name="endereco" value="{endereco}"><br>
+
+            <label for="preco">Preço:</label><br>
+            <input type="text" name="preco" value="{preco}"><br>
+
+            <label for="tipo">Tipo:</label><br>
+            <input type="text" name="tipo" value="{tipo}"><br>
+
+            <label for="quartos">Quartos:</label><br>
+            <input type="number" name="quartos" value="{quartos}"><br>
+
+            <label for="banheiros">Banheiros:</label><br>
+            <input type="number" name="banheiros" value="{banheiros}"><br>
+
+            <label for="anexo">Anexo (imagem ou documento):</label><br>
+            <input type="file" name="anexo">
+
+            <br><br>
+            <button type="submit" name="acao" value="salvar">Salvar</button>
+            <button type="submit" name="acao" value="excluir">Excluir</button>
+            <input type="reset" value="Cancelar">
+        </fieldset>
+    </form>
+    </center>
+</body>
+</html>
